@@ -23,7 +23,6 @@ In the context of Elastic SIEM, an agent is used to collect and forward security
 4.	Select Add agent.
 5.	Make sure agent is enrolled in the fleet.
 6.	Copy the command into your kali and wait for it to download. image You need root privileges for this installation or use an account with sudo privileges.
-7.	![installation] (https://github.com/TheThreatTitan/My-Portfolio/blob/main/My%20projects/images/ES5.jpg)
 8.	When installation is complete, you’ll see the agent in your fleet and its agent policy.
 
 **Step 2: Set up log collection**
