@@ -29,9 +29,10 @@ In the context of Elastic SIEM, an agent is used to collect and forward security
 To set up the agent to collect logs from your Kali VM and forward them to your Elastic SIEM instance, follow these steps:
 1.	Navigate to the Integrations page by: clicking on the management settings at the bottom of your side menu, then selecting “Integrations”.
 2.	Select “Elastic Defend” and click on it to open the integration page. add elastic defend
-3.	Name the integration and add description so another person who has to work with it. image
-4.	Select existing policy and use the agent policy associated with your machine
-5.	Your setup is complete
+3.	Name the integration and add description so another person who has to work with it.
+   ![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/My%20projects/images/ES5.jpg?raw=true)
+5.	Select existing policy and use the agent policy associated with your machine
+6.	Your setup is complete
 
 **Step 3: Generating security events**
 To view how the agent works, you can generate some security-related events on Kali. To do this you can use Nmap for port scanning, authentication errors, and hash cracking. You can run the following commands:
