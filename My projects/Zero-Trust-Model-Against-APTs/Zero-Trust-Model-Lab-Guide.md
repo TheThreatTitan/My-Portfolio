@@ -61,7 +61,7 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 
 # Recommendations
 Here are some protection and prevention tips against APTs for individuals as well as organizations
-•	**Focus on solutions that address the malware risk**: Ninety-three percent of respondents say malware was the source of the attack so focus on solutions to address such risks.
-•	**Pay more attention to targeted attacks**: They require more attention than opportunistic attacks. Respondents report that opportunistic attacks are less frequent and easier to prevent than targeted attacks. 
-•	**Be very vigilant**: actively analyzing logs and performing tests of security measures can inform IT teams of the potential presence of APTs, allowing them to deal with these threats immediately. 
-•	**Keep systems and apps updated**: APTs exploit vulnerabilities of devices and systems for many of their tactics. Developers regularly release patches and fixes to ensure that critical vulnerabilities are addressed.
+**1. Focus on solutions that address the malware risk**: Ninety-three percent of respondents say malware was the source of the attack so focus on solutions to address such risks.
+**2. Pay more attention to targeted attacks**: They require more attention than opportunistic attacks. Respondents report that opportunistic attacks are less frequent and easier to prevent than targeted attacks. 
+**3. Be very vigilant**: actively analyzing logs and performing tests of security measures can inform IT teams of the potential presence of APTs, allowing them to deal with these threats immediately. 
+**4. Keep systems and apps updated**: APTs exploit vulnerabilities of devices and systems for many of their tactics. Developers regularly release patches and fixes to ensure that critical vulnerabilities are addressed.
