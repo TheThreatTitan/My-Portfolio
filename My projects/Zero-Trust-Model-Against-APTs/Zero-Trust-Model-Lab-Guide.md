@@ -3,17 +3,17 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 
 **1. Set Up a Virtual Environment**
    **a. Install a Hypervisor:**
--	Choose a Hypervisor: Select VMware Workstation or [VirtualBox](https://www.virtualbox.org/wiki/Downloads), based on your system compatibility and requirements.
--		Install the Hypervisor: Follow the installation guide provided by the hypervisor’s official documentation.
--		Configure Settings: Allocate sufficient resources (CPU, RAM, Disk Space) to your VMs based on the intended workload.
+-Choose a Hypervisor: Select VMware Workstation or [VirtualBox](https://www.virtualbox.org/wiki/Downloads), based on your system compatibility and requirements.
+-Install the Hypervisor: Follow the installation guide provided by the hypervisor’s official documentation.
+-Configure Settings: Allocate sufficient resources (CPU, RAM, Disk Space) to your VMs based on the intended workload.
    **b. Create a Windows Server VM:**
--	Download Windows Server ISO: Obtain the ISO file for the version of Windows Server you plan to use.
--		Create VM: Set up a new virtual machine in your hypervisor with the appropriate settings (e.g., disk size, network adapter).
--			Install Windows Server: Boot the VM from the ISO and follow the installation prompts.
+-Download Windows Server ISO: Obtain the ISO file for the version of Windows Server you plan to use.
+-Create VM: Set up a new virtual machine in your hypervisor with the appropriate settings (e.g., disk size, network adapter).
+-Install Windows Server: Boot the VM from the ISO and follow the installation prompts.
 
 **2. Implement Active Directory and Domain Services**
 **a. Install and Configure AD DS:**
-•	Install AD DS Role:
+Install AD DS Role:
  o	Open Server Manager.
  o	Add Roles and Features.
  o	Select Active Directory Domain Services and complete the installation.
