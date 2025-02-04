@@ -1,9 +1,11 @@
 We set up a virtual environment to simulate a typical enterprise network and implemented several key security measures to showcase their effectiveness. These measures include Windows Defender Firewall, BitLocker Encryption, Role-Based Access Control (RBAC), and Privileged Access Management (PAM). The detailed process of installation is as follows:
+
 **1. Set Up a Virtual Environment**
 **a. Install a Hypervisor:**
 •	Choose a Hypervisor: Select VMware Workstation or [VirtualBox](https://www.virtualbox.org/wiki/Downloads), based on your system compatibility and requirements.
 •	Install the Hypervisor: Follow the installation guide provided by the hypervisor’s official documentation.
 •	Configure Settings: Allocate sufficient resources (CPU, RAM, Disk Space) to your VMs based on the intended workload.
+
 **b. Create a Windows Server VM:**
 •	Download Windows Server ISO: Obtain the ISO file for the version of Windows Server you plan to use.
 •	Create VM: Set up a new virtual machine in your hypervisor with the appropriate settings (e.g., disk size, network adapter).
@@ -12,9 +14,9 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 **2. Implement Active Directory and Domain Services**
 **a. Install and Configure AD DS:**
 •	Install AD DS Role:
-o	Open Server Manager.
-o	Add Roles and Features.
-o	Select Active Directory Domain Services and complete the installation.
+ o	Open Server Manager.
+ o	Add Roles and Features.
+ o	Select Active Directory Domain Services and complete the installation.
 
 •	Promote to Domain Controller:
 o	Open Server Manager.
