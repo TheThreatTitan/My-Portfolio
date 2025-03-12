@@ -16,8 +16,8 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 
 **Step 3: Implement Encryption**
 1. Setup group policy to use BitLocker without TPM:	Open Server Manager >	Group Policy Management >	Add new Group Policy Object (BitLocker Policy) >	Follow the wizard to enable “Require additional authentication at startup”.
-2. 	Link to the organizational unit
-3. 		Open the windows command prompt and enter the command “gpupdate /force” then restart the server
+2. Link to the organizational unit
+3. Open the windows command prompt and enter the command “gpupdate /force” then restart the server
 4. Install and Configure BitLocker Drive Encryption:	Open Server Manager >	Add Roles and Features >	Select BitLocker Drive Encryption and complete the installation.
 5. Enable BitLocker:	Open Control Panel, go to System and Security, select BitLocker Drive Encryption >	Turn on BitLocker and follow the prompts to encrypt the server’s disk.
 
@@ -59,9 +59,9 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 2. Configure the inbound and outbound rules under windows defender with advanced security.
 *Note:* New rules could be created based on the level of traffic
 
-# Recommendations
+**Recommendations**
 Here are some protection and prevention tips against APTs for individuals as well as organizations
-**1. Focus on solutions that address the malware risk**: Ninety-three percent of respondents say malware was the source of the attack so focus on solutions to address such risks.
-**2. Pay more attention to targeted attacks**: They require more attention than opportunistic attacks. Respondents report that opportunistic attacks are less frequent and easier to prevent than targeted attacks. 
-**3. Be very vigilant**: actively analyzing logs and performing tests of security measures can inform IT teams of the potential presence of APTs, allowing them to deal with these threats immediately. 
-**4. Keep systems and apps updated**: APTs exploit vulnerabilities of devices and systems for many of their tactics. Developers regularly release patches and fixes to ensure that critical vulnerabilities are addressed.
+1. Focus on solutions that address the malware risk: Ninety-three percent of respondents say malware was the source of the attack so focus on solutions to address such risks.
+2. Pay more attention to targeted attacks: They require more attention than opportunistic attacks. Respondents report that opportunistic attacks are less frequent and easier to prevent than targeted attacks. 
+3. Be very vigilant: actively analyzing logs and performing tests of security measures can inform IT teams of the potential presence of APTs, allowing them to deal with these threats immediately. 
+4. Keep systems and apps updated: APTs exploit vulnerabilities of devices and systems for many of their tactics. Developers regularly release patches and fixes to ensure that critical vulnerabilities are addressed.
