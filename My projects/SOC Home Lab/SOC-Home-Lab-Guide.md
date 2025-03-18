@@ -6,12 +6,12 @@ This is a project and a guide on setting up a home SOC lab, particularly using E
 2.	Basic knowledge of Linux and virtualization software.
 
 **Overview of the tasks**
-•	Set up a free Elastic account and install Kali VM
-•	Configure the Elastic Agent on the Linux VM to collect the logs and forward it to the SIEM.
-•	Generate security events on the Kali VM.
-•	Query to find the security events in the Elastic SIEM.
-•	Create a Dashboard to visualize security events.
-•	Create alerts for security events.
+- Set up a free Elastic account and install Kali VM
+- Configure the Elastic Agent on the Linux VM to collect the logs and forward it to the SIEM.
+- Generate security events on the Kali VM.
+- Query to find the security events in the Elastic SIEM.
+- Create a Dashboard to visualize security events.
+- Create alerts for security events.
 
 **Step 1: Set up your Elastic Stack Agent in Kali**
 Please note: These instructions are written with the assumption that you have the Kali VM set up and the instructions using Elastic Stack are as accurate of 31st January 2025.
