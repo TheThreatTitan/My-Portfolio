@@ -22,7 +22,7 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 5. Enable BitLocker:	Open Control Panel, go to System and Security, select BitLocker Drive Encryption >	Turn on BitLocker and follow the prompts to encrypt the server’s disk.
 
 **Rationale:** Even if an attacker gains physical access to our machine, encrypted disks prevent them from reading the data without the proper decryption keys. It also helps maintain the confidentiality and integrity of the data stored on the disks.
-![image]((https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT1.jpg)
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT1.jpg)
 
 ![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT2.jpg)
 
