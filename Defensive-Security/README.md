@@ -1,1 +1,1 @@
-This is where I will be documenting on projects I work on
+This folder focuses on detection, threat hunting, incident response, and security operations. It includes analysis of attack techniques, log analysis, and SIEM rule creation.
