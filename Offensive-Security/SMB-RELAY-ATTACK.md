@@ -60,6 +60,8 @@ set SMBHOST 192.168.50.4
 exploit
 ````
 
+[image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr4_LI.jpg)
+
 Step 2: In a new tab, configure dnsspoof in order to redirect the victim to our Metasploit system every time there's an SMB connection to any host in the domain: slytherin.com. Create a file with fake dns entry with all subdomains of
 slytherin.com pointing to our attacker machine.
 
@@ -88,18 +90,17 @@ In two separate terminals, start the ARP Spoof attack against 192.168.50.12 and 
 arpspoof -i eth1 -t 192.168.50.12 192.168.50.1
 arpspoof -i eth1 -t 192.168.50.1 192.168.50.12
 ````
-image
+[image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr2_LI.jpg)
 
-image
+[image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr3_LI.jpg)
 
 So, every time the victim starts an SMB connection, dnsspoof aligned with the ARP Spoof attack, forges the DNS replies telling that the searched DNS address is hosted at the attacker machine:
 
-image
 
-* Then instead of getting a DNS response with the real IP address of fileserver.slytherin.com, it received the IP of the attacker: 192.168.50.23. In Metasploit, every time there is an incoming SMB connection, the SMB Relay exploit
+Instead of getting a DNS response with the real IP address of fileserver.slytherin.com, it received the IP of the attacker: 192.168.50.23. In Metasploit, every time there is an incoming SMB connection, the SMB Relay exploit
 grabs the SMB hashes (credentials) and then uses them to get a shell on the target machine (192.168.5.4) - since it was set in the SMBHOST field of the smb-relay exploit.
 
-image
+[image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr5_LI.jpg)
 
 ## Key Takeaway
 In this lab, I were able to trick the client by spoofing DNS records, this, in turn, combined with SMB relay attack, provided us with a meterpreter session on the target machine with administrative privileges.
