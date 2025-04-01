@@ -75,7 +75,7 @@ echo "192.168.50.23 *.slytherin.com" > hosts
 dnsspoof -i eth1 -f hosts
 ````
 
-image
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr6_LI.jpg)
 
 Step 3: Activate the MiTM attack using the ARP Spoofing technique. My goal is to poison the traffic between my victim, Windows 7 at 192.168.50.12, and the default gateway at 192.168.50.1. In this way, I can manipulate the traffic using dnsspoof, which is already running. 
 In order to perform an ARP Spoofing attack, I enabled the IP forwarding as follow in a new tab (3):
