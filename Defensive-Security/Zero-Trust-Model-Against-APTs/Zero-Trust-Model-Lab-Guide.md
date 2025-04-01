@@ -22,9 +22,9 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 5. Enable BitLocker:	Open Control Panel, go to System and Security, select BitLocker Drive Encryption >	Turn on BitLocker and follow the prompts to encrypt the server’s disk.
 
 **Rationale:** Even if an attacker gains physical access to our machine, encrypted disks prevent them from reading the data without the proper decryption keys. It also helps maintain the confidentiality and integrity of the data stored on the disks.
-![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/My%20projects/images/ZT1.jpg?raw=true)
+![image]((https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT1.jpg)
 
-![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/My%20projects/images/ZT2.jpg?raw=true)
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT2.jpg)
 
 **Step 4: Implement Endpoint Protection**
 1. Install Endpoint Protection Solution: For Windows Defender,	Open Windows Security from the Start menu >	Ensure that Defender Antivirus is enabled and configure settings for real-time protection, cloud-delivered protection, and automatic sample submission.
@@ -37,9 +37,9 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 2. Create a shared FOLDER:	Under Files and Storage Services, create a new shared folder >	Enable access-based enumeration >	Follow the wizard to customize permissions
 
 **Rationale**: RBAC Assigns permissions based on roles rather than individual users, simplifying the management of user rights and ensuring consistent access policies. It also helps reduce the risk of misconfigured permissions and ensures that access is granted based on job roles.
-![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/My%20projects/images/ZT3.jpg?raw=true)
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT3.jpg)
 
-![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/My%20projects/images/ZT4.jpg?raw=true)
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT4.jpg)
 
 **Step 6: Implement Privileged Access Management (PAM)**
 1. Enable Privileged Access Management:	In the Windows PowerShell ISE, enter the command to display the privileged access management feature.
@@ -50,7 +50,7 @@ We set up a virtual environment to simulate a typical enterprise network and imp
 6. The fifth line; we get the group member. This displays all the information, and shows that the user is automatically removed based on the time to live >	Enter the command to enable the feature and add the domain you want to target.
 7.  Add user to a privileged group for a specific period >	Enter the command to create a variable and set the period >	Add the group members alongside the time to live assigned earlier
 
-![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/My%20projects/images/ZT5.png?raw=true)
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Defensive-Security/images/ZT1.png)
 
 **Rationale**: This is extremely useful, especially in organizations where people might need certain access but not necessarily need to be granted permanently. This will reduce the possibilities of APTs, as it is easier to track users that have/had access and at the exact period they have/had it for.
 
