@@ -60,7 +60,7 @@ set SMBHOST 192.168.50.4
 exploit
 ````
 
-![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr1_LI.jpg)
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr1_L.jpg)
 
 Step 2: In a new tab, configure dnsspoof in order to redirect the victim to our Metasploit system every time there's an SMB connection to any host in the domain: slytherin.com. Create a file with fake dns entry with all subdomains of
 slytherin.com pointing to our attacker machine.
@@ -96,7 +96,7 @@ arpspoof -i eth1 -t 192.168.50.1 192.168.50.12
 
 So, every time the victim starts an SMB connection, dnsspoof aligned with the ARP Spoof attack, forges the DNS replies telling that the searched DNS address is hosted at the attacker machine:
 
-![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr1_L.jpg)
+![image](https://github.com/TheThreatTitan/My-Portfolio/blob/main/Offensive-Security/Images/smbr4_LI.jpg)
 
 Instead of getting a DNS response with the real IP address of fileserver.slytherin.com, it received the IP of the attacker: 192.168.50.23. In Metasploit, every time there is an incoming SMB connection, the SMB Relay exploit
 grabs the SMB hashes (credentials) and then uses them to get a shell on the target machine (192.168.5.4) - since it was set in the SMBHOST field of the smb-relay exploit.
